@@ -105,6 +105,12 @@ export default function Login() {
             </TouchableOpacity>
 
             <TouchableOpacity
+              onPress={() => router.push('/auth/esqueceu-senha')}>
+                <text style={styles.forgotPassword}>Esqueceu sua senha?
+                </text>
+              </TouchableOpacity>
+
+            <TouchableOpacity
               style={styles.link}
               onPress={() => router.push('/auth/cadastro')}
             >
@@ -173,4 +179,10 @@ const styles = StyleSheet.create({
     color: '#00A8FF',
     fontSize: 15,
   },
+  forgotPassword: {
+  color: '#00A8FF',
+  textAlign: 'right',
+  marginBottom: 15,
+  fontSize: 14
+},
 });

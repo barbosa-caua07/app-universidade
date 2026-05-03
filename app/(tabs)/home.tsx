@@ -37,18 +37,15 @@ export default function Home() {
       {/* 🔵 HEADER */}
       <View style={styles.header}>
         <View style={styles.headerTop}>
-          
           <View>
             <Text style={styles.headerTitle}>UNDB App</Text>
             <Text style={styles.headerSubtitle}>
               Bem-vindo, {nome || 'Aluno'} 👋
             </Text>
           </View>
-
           <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
             <Text style={styles.logoutText}>Sair</Text>
           </TouchableOpacity>
-
         </View>
       </View>
 
